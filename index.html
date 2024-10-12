@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/aba.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Cafeteria</title>
+</head>
+<body>
+    <div>
+        <img class="back" src="img/cafe.jpg" alt="cafe quente e grãos ao redor">    
+    </div>
+    <form action="Seu login">
+        <fieldset>
+            <legend>Faça seu Login</legend>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="seuemail@algo.com" required />
+            <label for="password">Senha:</label>
+            <input type="password" id="password" placeholder="sua senha" required />
+            <div>
+                <a href="#section1"button class="btn" type="submit"> Entrar</button></a>
+            </div>
+        </fieldset>
+    </form>
+    <main id="section1">
+        <nav class="menu">
+            <input type="checkbox" id="menu-toggle">
+            <label for= "menu-toggle" class="menu-icon">
+                <span>.</span>
+                <span>.</span>
+                <span>.</span>
+            </label>
+            <ul class="menu-items">
+                <li><a href="#section1">Home</a></li>
+                <li><a href="#section2">Cardápio</a></li>
+                <li><a href="#section3">Sobre</a></li>
+                <li><a href="#section4">Contato</a></li>
+            </ul>
+        </nav>
+        <section class="cardapio" id="section2">
+            <figure>
+                <img class="cap" src="img/cappucciono.jpg" alt="xícara de café"/>
+                <figcaption>Café dos sonhos</figcaption>
+            </figure>
+            <figure>
+                <img class="cap" src="img/chocolate.jpg" alt="xícara de chocolate"/>
+                <figcaption>Chocolate cremoso</figcaption>
+            </figure>
+            <figure>
+                <img class="cap" src="img/cafe com leite.jpg" alt="café com leite"/>
+                <figcaption>Café com leite</figcaption>
+            </figure>
+            <figure>
+                <img class="cap" src="img/cafe-limao.jpg" alt="café gelado com limão"/>
+                <figcaption>Café gelado com laranja</figcaption>
+            </figure>
+            <figure>
+                <img class="cap" src="img/cafe gelado.jpg" alt="café gelado"/>
+                <figcaption>Café gelado</figcaption>
+            </figure>
+            <figure>
+                <img class="cap" src="img/cafe-em-po-chocolate.jpg" alt="café com chocolate em pó"/>
+                <figcaption>Café cremoso com chocolate em pó</figcaption>
+            </figure> 
+        </section>
+        <section class="sobre" id="section3">
+            <img src="img/ambiente.jpg" alt="ambiente da Cafeteria"/>
+            <p>
+                O Café Esperança é projetado para ser um espaço acolhedor e inspirador. Com uma decoração que mistura elementos rústicos e modernos, o ambiente é iluminado por luz natural e decorado com plantas verdes, criando uma atmosfera tranquila e revitalizante. Músicas suaves tocam ao fundo, e há áreas confortáveis para leitura, trabalho ou simplesmente relaxar.
+            </p>
+             <a href="#section1"><img class="seta" src="./img/setas-para-cima.png" alt=""></a>
+        </section>
+    </main>
+    <footer>
+        <section class="contato" id="section4">
+            <form class="container" action="Fale Conosco">
+                <fieldset>
+                    <legend>Fale conosco</legend>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" placeholder="Seu nome" required />
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" placeholder="seuemail@algo.com" required />
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" placeholder="(xx) xxxxx-xxxx" required />
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" rows="4" placeholder="Digite aqui sua mensagem..." required></textarea>
+                    <div>
+                        <button class="btn" type="submit">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
+            <a href="#section1"><img class="seta" src="./img/setas-para-cima.png" alt=""></a>
+        </section>
+    </footer>
+    
+</body>
+</html>
